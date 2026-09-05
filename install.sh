@@ -2,6 +2,7 @@
 set -e
 
 echo "=== OmniRoute Installation Script ==="
+echo "VPS IP: 89.251.8.32"
 echo "This script will install OmniRoute on your VPS without affecting existing services."
 echo ""
 
@@ -95,8 +96,8 @@ AUTH_COOKIE_SECURE=false
 REQUIRE_API_KEY=false
 
 # === Domain ===
-BASE_URL=http://$(curl -s ifconfig.me):20128
-NEXT_PUBLIC_BASE_URL=http://$(curl -s ifconfig.me):20128
+BASE_URL=http://89.251.8.32:20128
+NEXT_PUBLIC_BASE_URL=http://89.251.8.32:20128
 EOF
 
 log_info ".env file created at $OMNIRoute_DIR/.env"
@@ -119,13 +120,12 @@ sleep 3
 
 if docker ps | grep -q omniroute; then
   log_info "OmniRoute container started successfully!"
-  SERVER_IP=$(curl -s ifconfig.me)
   echo ""
   log_info "=== Installation Complete ==="
   echo ""
   echo "OmniRoute is now running at:"
-  echo "  - Dashboard: http://$SERVER_IP:20128/dashboard"
-  echo "  - API Endpoint: http://$SERVER_IP:20128/v1/chat/completions"
+  echo "  - Dashboard: http://89.251.8.32:20128/dashboard"
+  echo "  - API Endpoint: http://89.251.8.32:20128/v1/chat/completions"
   echo ""
   echo "Default credentials:"
   echo "  - Password: ChangeThisPassword123!"

@@ -9,6 +9,10 @@
 - کانتینر Docker ایزوله اجرا می‌شه
 - سرویس‌های systemd موجود دست‌نخورده می‌مونن
 
+## VPS جدید
+
+**IP:** `89.251.8.32`
+
 ## روش نصب
 
 ### گزینه ۱: اجرای خودکار با اسکریپت
@@ -31,8 +35,8 @@ docker compose up -d
 
 ## دسترسی پس از نصب
 
-- **داشبورد:** `http://YOUR_VPS_IP:20128/dashboard`
-- **API Endpoint:** `http://YOUR_VPS_IP:20128/v1/chat/completions`
+- **داشبورد:** `http://89.251.8.32:20128/dashboard`
+- **API Endpoint:** `http://89.251.8.32:20128/v1/chat/completions`
 
 ### پسورد پیش‌فرض
 

@@ -6,8 +6,8 @@ compatibility_date = "2024-01-01"
 # account_id = "8eedd29930eb28834e97c7d244dd93f3"
 
 [vars]
-# OmniRoute VPS URL
-OMNIRoute_URL = "http://185.110.190.166:20128"
+# OmniRoute VPS URL (NEW)
+OMNIRoute_URL = "http://89.251.8.32:20128"
 
 # Optional: API Key for authentication
 # API_KEY = "your-api-key-here"
