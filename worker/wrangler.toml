@@ -2,17 +2,8 @@ name = "omniroute-proxy"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
-# Account ID (auto-detected if not set)
-# account_id = "8eedd29930eb28834e97c7d244dd93f3"
-
 [vars]
-# OmniRoute VPS URL (NEW)
 OMNIRoute_URL = "http://89.251.8.32:20128"
 
-# Optional: API Key for authentication
-# API_KEY = "your-api-key-here"
-
-# Routes (uncomment and update with your domain)
-# [[routes]]
-# pattern = "llms.yourdomain.com/*"
-# zone_name = "yourdomain.com"
+# Optional: API Key
+# API_KEY = "your-api-key"
