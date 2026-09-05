@@ -1,0 +1,17 @@
+{
+  "name": "omniroute-worker-proxy",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker proxy for OmniRoute AI Gateway",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "keywords": ["cloudflare", "worker", "omniroute", "proxy", "ai-gateway"],
+  "author": "Reymond-Reddington",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
